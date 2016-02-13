@@ -183,14 +183,6 @@ max()
 # Tip: if you save the regression as an object (eg. lin_reg <- lm()), you can access the result 
 # more easily (just type lin_reg) and with more info (summary(lin_reg)).
 
-
-# Another way to look at the data is to separate them into two groups
-# Create new data frames HE and LE that are exactly like the aggregate Camp one but each one
-# with camps from the same exposure.
-# We want the columns to be camp, trades, exposure (numeric!) and distance
-
-# Now correlate trades with exposure using the original camp aggregate data frame
-# and correlate trades with distance within each one of these groups (HE and LE).
-# Is there a big difference between this and the previous method?
-# Which one is better?
-
+# Look at the regression. Does it seem reasonable?
+# Compare the coefficients for distance and for exposure.
+# What conclusion can we draw from this?
