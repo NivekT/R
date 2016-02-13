@@ -127,4 +127,5 @@ lm(Camps$trades ~ Camps$Exposure + Camps$distance)
   # Making a distance column with same range as exposure
 Camps$dist_01 <- Camps$distance / max(Camps$distance)
 
-lm(Camps$trades ~ Camps$Exposure + Camps$dist_01)
+reg <- lm(Camps$trades ~ Camps$Exposure + Camps$dist_01)
+summary(reg)
